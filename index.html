@@ -12,61 +12,59 @@
 <body>
   <main>
     <header class="site-header">
-        <a href="#" class="logo">snap</a>
+        <img class="logo" src="./images/logo.svg" alt="">
 
-        <button class="hamburger-menu" aria-label="Open menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-    </header>
+      <button class="hamburger-menu" aria-label="Open navigation">
+          <img src="./images/icon-menu.svg" alt="">
+      </button>
 
-    <nav aria-label="Primary" hidden>
-      <button class="close-menu" aria-label="Close navigation">❌</button>
-
-      <ul class="nav-list">
+      <nav class="desktop-nav" aria-label="Primary">
+      <ul class="nav-list desktop">
         <li class="has-dropdown">
           <button>
             Features
-            <span class="arrow"></span>
+            <img class="arrow" src="./images/icon-arrow-down.svg" alt="">
           </button>
 
-          <ul class="dropdown">
-            <li><a href="#">Todo List</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Reminders</a></li>
-            <li><a href="#">Planning</a></li>
-          </ul>
-        </li>
-
-        <li class="has-dropdown">
-          <button>
-            Company
-            <span class="arrow"></span>
-          </button>
-
-          <ul class="dropdown">
-            <li><a href="#">History</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </li>
-
-        <li><a href="#">Career</a></li>
-        <li><a href="#">About</a></li>
+      <ul class="dropdown">
+        <li><img src="./images/icon-todo.svg" alt="">Todo List</li>
+        <li><img src="./images/icon-calendar.svg" alt="">Calendar</li>
+        <li><img src="./images/icon-reminders.svg" alt="">Reminders</li>
+        <li><img src="./images/icon-planning.svg" alt="">Planning</li>
       </ul>
+    </li>
 
-      <div class="auth">
-        <a href="#">Login</a>
-        <a href="#" class="register">Register</a>
-      </div>
-    </nav>
+    <li class="has-dropdown">
+      <button>
+        Company
+        <img class="arrow" src="./images/icon-arrow-down.svg" alt="">
+      </button>
+
+      <ul class="dropdown">
+        <li>History</li>
+        <li>Our Team</li>
+        <li>Blog</li>
+      </ul>
+    </li>
+
+    <li>Careers</li>
+    <li>About</li>
+  </ul>
+
+  <div class="auth desktop-auth">
+    <a href="#">Login</a>
+    <a href="#" class="register">Register</a>
+  </div>
+</nav>
+
+    </header>
 
     <section class="hero">
       <figure class="hero-image">
         <img src="./images/image-hero-mobile.png" alt="Person working remotely using a laptop">
       </figure>
 
+      <div class="left">
       <div class="hero-content">
         <h1>Make remote work</h1>
 
@@ -85,8 +83,55 @@
         </ul>
       </footer>
     </section>
+    </div>
 
   </main>
+
+  <div class="overlay">
+    <nav aria-label="Primary" class="nav-overlay">
+      <button class="close-menu" aria-label="Close navigation">
+        <img src="./images/icon-close-menu.svg" alt="">
+      </button>
+
+      <ul class="nav-list">
+        <li class="has-dropdown">
+          <button>
+            Features
+            <img class="arrow" src="./images/icon-arrow-down.svg" alt="">
+          </button>
+
+          <ul class="dropdown">
+            <li><img src="./images/icon-todo.svg" alt=""><a href="#">Todo List</a></li>
+            <li><img src="./images/icon-calendar.svg" alt=""><a href="#">Calendar</a></li>
+            <li><img src="./images/icon-reminders.svg" alt=""><a href="#">Reminders</a></li>
+            <li><img src="./images/icon-planning.svg" alt=""><a href="#">Planning</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <button>
+            Company
+            <img class="arrow" src="./images/icon-arrow-down.svg" alt="">
+          </button>
+
+          <ul class="dropdown">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+
+        <li class="career"><a href="#">Careers</a></li>
+        <li class="about"><a href="#">About</a></li>
+      </ul>
+
+      <div class="auth">
+        <a href="#">Login</a>
+        <a href="#" class="register">Register</a>
+      </div>
+    </nav>
+  </div>
   
+  <script src="script.js"></script>
 </body>
 </html>
