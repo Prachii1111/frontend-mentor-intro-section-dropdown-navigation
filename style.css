@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Epilogue", sans-serif;
+
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+}
+
+.site-header {
+    width: 100%;
+    padding: 20px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border: none;
+    background: transparent;
+}
+
+.hamburger-menu span {
+    background-color: #212121;
+    width: 32px;
+    height: 4px;
+    /* border-radius: 5px; */
+}
+
+/*   hero    */
+
+.hero {
+    /* border: 1px solid salmon; */
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 20px;
+}
+
+.hero-image {
+    /* border: 1px solid blue; */
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*  hero content  */
+.hero-content {
+    /* border: 1px solid aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.hero-content p {
+    /* width: 350px; */
+    max-width: 35ch;
+    text-align: center;
+}
+
+.hero-content button {
+    padding: 20px 28px;
+    border-radius: 15px;
+    background-color: #000;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+}
+
+/*   footer   */
+.clients  {
+    /* border: 1px solid rgb(183, 123, 10); */
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.clients ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 16px;
+    align-items: center;
+}
+.clients img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
